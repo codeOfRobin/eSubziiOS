@@ -7,100 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42C776351C7DB765008DC373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C776341C7DB765008DC373 /* AppDelegate.swift */; };
-		42C776371C7DB765008DC373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C776361C7DB765008DC373 /* ViewController.swift */; };
-		42C7763A1C7DB765008DC373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C776381C7DB765008DC373 /* Main.storyboard */; };
-		42C7763C1C7DB765008DC373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C7763B1C7DB765008DC373 /* Assets.xcassets */; };
-		42C7763F1C7DB765008DC373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C7763D1C7DB765008DC373 /* LaunchScreen.storyboard */; };
-		C6C26C4E02087323929CEC9B /* libPods-eSubzi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2808F3FEDAB3A513AF320C /* libPods-eSubzi.a */; };
+		4281E24D1C8DB6D2003A1A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4281E24C1C8DB6D2003A1A9E /* AppDelegate.swift */; };
+		4281E24F1C8DB6D2003A1A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4281E24E1C8DB6D2003A1A9E /* ViewController.swift */; };
+		4281E2521C8DB6D2003A1A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4281E2501C8DB6D2003A1A9E /* Main.storyboard */; };
+		4281E2541C8DB6D2003A1A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4281E2531C8DB6D2003A1A9E /* Assets.xcassets */; };
+		4281E2571C8DB6D2003A1A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4281E2551C8DB6D2003A1A9E /* LaunchScreen.storyboard */; };
+		4A799D099DB5C2F33F787EDA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B4135E4F52F6119AF27B03 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		304F5B00757C4747CF154703 /* Pods-eSubzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eSubzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-eSubzi/Pods-eSubzi.release.xcconfig"; sourceTree = "<group>"; };
-		42C776311C7DB765008DC373 /* eSubzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eSubzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		42C776341C7DB765008DC373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42C776361C7DB765008DC373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		42C776391C7DB765008DC373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		42C7763B1C7DB765008DC373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		42C7763E1C7DB765008DC373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		42C776401C7DB765008DC373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		626327ED4875F7E81CC33DB9 /* Pods-eSubzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eSubzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eSubzi/Pods-eSubzi.debug.xcconfig"; sourceTree = "<group>"; };
-		6D2808F3FEDAB3A513AF320C /* libPods-eSubzi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eSubzi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B4135E4F52F6119AF27B03 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4281E2491C8DB6D2003A1A9E /* eSubzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eSubzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4281E24C1C8DB6D2003A1A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4281E24E1C8DB6D2003A1A9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4281E2511C8DB6D2003A1A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4281E2531C8DB6D2003A1A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4281E2561C8DB6D2003A1A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4281E2581C8DB6D2003A1A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E434DF877AC1AA595E055A8E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E74800B0017CC8250ED075AC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		42C7762E1C7DB765008DC373 /* Frameworks */ = {
+		4281E2461C8DB6D2003A1A9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C26C4E02087323929CEC9B /* libPods-eSubzi.a in Frameworks */,
+				4A799D099DB5C2F33F787EDA /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42C776281C7DB765008DC373 = {
+		4281E2401C8DB6D2003A1A9E = {
 			isa = PBXGroup;
 			children = (
-				42C776331C7DB765008DC373 /* eSubzi */,
-				42C776321C7DB765008DC373 /* Products */,
-				BE46EC55D24FDAE76DB182A5 /* Pods */,
-				BC1EBFF6DFEBB9CA0EF964CA /* Frameworks */,
+				4281E24B1C8DB6D2003A1A9E /* eSubzi */,
+				4281E24A1C8DB6D2003A1A9E /* Products */,
+				BE6CCEEDB5C9C6E91F9E009A /* Pods */,
+				CBAA14C974628CF36905F126 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		42C776321C7DB765008DC373 /* Products */ = {
+		4281E24A1C8DB6D2003A1A9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42C776311C7DB765008DC373 /* eSubzi.app */,
+				4281E2491C8DB6D2003A1A9E /* eSubzi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42C776331C7DB765008DC373 /* eSubzi */ = {
+		4281E24B1C8DB6D2003A1A9E /* eSubzi */ = {
 			isa = PBXGroup;
 			children = (
-				42C776341C7DB765008DC373 /* AppDelegate.swift */,
-				42C776361C7DB765008DC373 /* ViewController.swift */,
-				42C776381C7DB765008DC373 /* Main.storyboard */,
-				42C7763B1C7DB765008DC373 /* Assets.xcassets */,
-				42C7763D1C7DB765008DC373 /* LaunchScreen.storyboard */,
-				42C776401C7DB765008DC373 /* Info.plist */,
+				4281E24C1C8DB6D2003A1A9E /* AppDelegate.swift */,
+				4281E24E1C8DB6D2003A1A9E /* ViewController.swift */,
+				4281E2501C8DB6D2003A1A9E /* Main.storyboard */,
+				4281E2531C8DB6D2003A1A9E /* Assets.xcassets */,
+				4281E2551C8DB6D2003A1A9E /* LaunchScreen.storyboard */,
+				4281E2581C8DB6D2003A1A9E /* Info.plist */,
 			);
 			path = eSubzi;
 			sourceTree = "<group>";
 		};
-		BC1EBFF6DFEBB9CA0EF964CA /* Frameworks */ = {
+		BE6CCEEDB5C9C6E91F9E009A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6D2808F3FEDAB3A513AF320C /* libPods-eSubzi.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BE46EC55D24FDAE76DB182A5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				626327ED4875F7E81CC33DB9 /* Pods-eSubzi.debug.xcconfig */,
-				304F5B00757C4747CF154703 /* Pods-eSubzi.release.xcconfig */,
+				E434DF877AC1AA595E055A8E /* Pods.debug.xcconfig */,
+				E74800B0017CC8250ED075AC /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBAA14C974628CF36905F126 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20B4135E4F52F6119AF27B03 /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42C776301C7DB765008DC373 /* eSubzi */ = {
+		4281E2481C8DB6D2003A1A9E /* eSubzi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42C776431C7DB765008DC373 /* Build configuration list for PBXNativeTarget "eSubzi" */;
+			buildConfigurationList = 4281E25B1C8DB6D2003A1A9E /* Build configuration list for PBXNativeTarget "eSubzi" */;
 			buildPhases = (
-				3ED45D585A6387A365F7C376 /* Check Pods Manifest.lock */,
-				42C7762D1C7DB765008DC373 /* Sources */,
-				42C7762E1C7DB765008DC373 /* Frameworks */,
-				42C7762F1C7DB765008DC373 /* Resources */,
-				903FA83F0F30D99DFA0FF520 /* Embed Pods Frameworks */,
-				F0D5DC9214370228D89CFCF2 /* Copy Pods Resources */,
+				0F4A821A8417221EB0023F8D /* Check Pods Manifest.lock */,
+				4281E2451C8DB6D2003A1A9E /* Sources */,
+				4281E2461C8DB6D2003A1A9E /* Frameworks */,
+				4281E2471C8DB6D2003A1A9E /* Resources */,
+				AA23F154AFF2A5FB7D3D6AED /* Embed Pods Frameworks */,
+				06A768BCDEB8EE44E165EFDE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -108,25 +108,25 @@
 			);
 			name = eSubzi;
 			productName = eSubzi;
-			productReference = 42C776311C7DB765008DC373 /* eSubzi.app */;
+			productReference = 4281E2491C8DB6D2003A1A9E /* eSubzi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		42C776291C7DB765008DC373 /* Project object */ = {
+		4281E2411C8DB6D2003A1A9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Robin Malhotra";
 				TargetAttributes = {
-					42C776301C7DB765008DC373 = {
-						CreatedOnToolsVersion = 7.2;
+					4281E2481C8DB6D2003A1A9E = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 42C7762C1C7DB765008DC373 /* Build configuration list for PBXProject "eSubzi" */;
+			buildConfigurationList = 4281E2441C8DB6D2003A1A9E /* Build configuration list for PBXProject "eSubzi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -134,31 +134,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 42C776281C7DB765008DC373;
-			productRefGroup = 42C776321C7DB765008DC373 /* Products */;
+			mainGroup = 4281E2401C8DB6D2003A1A9E;
+			productRefGroup = 4281E24A1C8DB6D2003A1A9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42C776301C7DB765008DC373 /* eSubzi */,
+				4281E2481C8DB6D2003A1A9E /* eSubzi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		42C7762F1C7DB765008DC373 /* Resources */ = {
+		4281E2471C8DB6D2003A1A9E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C7763F1C7DB765008DC373 /* LaunchScreen.storyboard in Resources */,
-				42C7763C1C7DB765008DC373 /* Assets.xcassets in Resources */,
-				42C7763A1C7DB765008DC373 /* Main.storyboard in Resources */,
+				4281E2571C8DB6D2003A1A9E /* LaunchScreen.storyboard in Resources */,
+				4281E2541C8DB6D2003A1A9E /* Assets.xcassets in Resources */,
+				4281E2521C8DB6D2003A1A9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3ED45D585A6387A365F7C376 /* Check Pods Manifest.lock */ = {
+		06A768BCDEB8EE44E165EFDE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F4A821A8417221EB0023F8D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,7 +188,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		903FA83F0F30D99DFA0FF520 /* Embed Pods Frameworks */ = {
+		AA23F154AFF2A5FB7D3D6AED /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -185,51 +200,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eSubzi/Pods-eSubzi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0D5DC9214370228D89CFCF2 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eSubzi/Pods-eSubzi-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		42C7762D1C7DB765008DC373 /* Sources */ = {
+		4281E2451C8DB6D2003A1A9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C776371C7DB765008DC373 /* ViewController.swift in Sources */,
-				42C776351C7DB765008DC373 /* AppDelegate.swift in Sources */,
+				4281E24F1C8DB6D2003A1A9E /* ViewController.swift in Sources */,
+				4281E24D1C8DB6D2003A1A9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		42C776381C7DB765008DC373 /* Main.storyboard */ = {
+		4281E2501C8DB6D2003A1A9E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				42C776391C7DB765008DC373 /* Base */,
+				4281E2511C8DB6D2003A1A9E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		42C7763D1C7DB765008DC373 /* LaunchScreen.storyboard */ = {
+		4281E2551C8DB6D2003A1A9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				42C7763E1C7DB765008DC373 /* Base */,
+				4281E2561C8DB6D2003A1A9E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		42C776411C7DB765008DC373 /* Debug */ = {
+		4281E2591C8DB6D2003A1A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,10 +278,11 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		42C776421C7DB765008DC373 /* Release */ = {
+		4281E25A1C8DB6D2003A1A9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,32 +315,31 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		42C776441C7DB765008DC373 /* Debug */ = {
+		4281E25C1C8DB6D2003A1A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 626327ED4875F7E81CC33DB9 /* Pods-eSubzi.debug.xcconfig */;
+			baseConfigurationReference = E434DF877AC1AA595E055A8E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = eSubzi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = codeOfRobin.eSubzi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeOfRobin.eSubzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		42C776451C7DB765008DC373 /* Release */ = {
+		4281E25D1C8DB6D2003A1A9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 304F5B00757C4747CF154703 /* Pods-eSubzi.release.xcconfig */;
+			baseConfigurationReference = E74800B0017CC8250ED075AC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = eSubzi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = codeOfRobin.eSubzi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeOfRobin.eSubzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -347,25 +347,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42C7762C1C7DB765008DC373 /* Build configuration list for PBXProject "eSubzi" */ = {
+		4281E2441C8DB6D2003A1A9E /* Build configuration list for PBXProject "eSubzi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42C776411C7DB765008DC373 /* Debug */,
-				42C776421C7DB765008DC373 /* Release */,
+				4281E2591C8DB6D2003A1A9E /* Debug */,
+				4281E25A1C8DB6D2003A1A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42C776431C7DB765008DC373 /* Build configuration list for PBXNativeTarget "eSubzi" */ = {
+		4281E25B1C8DB6D2003A1A9E /* Build configuration list for PBXNativeTarget "eSubzi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42C776441C7DB765008DC373 /* Debug */,
-				42C776451C7DB765008DC373 /* Release */,
+				4281E25C1C8DB6D2003A1A9E /* Debug */,
+				4281E25D1C8DB6D2003A1A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 42C776291C7DB765008DC373 /* Project object */;
+	rootObject = 4281E2411C8DB6D2003A1A9E /* Project object */;
 }
