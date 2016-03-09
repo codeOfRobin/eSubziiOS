@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eSubzi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="loginViewController" customModule="eSubzi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3u-jU-mht">
+                                <rect key="frame" x="20" y="300" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8x-BZ-A4W">
+                                <rect key="frame" x="20" y="360" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bag.png" translatesAutoresizingMaskIntoConstraints="NO" id="HRl-wX-Kxr">
+                                <rect key="frame" x="210" y="44" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="MHm-Cj-xXe"/>
+                                    <constraint firstAttribute="height" constant="180" id="aWy-ud-kYC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E Subzi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkk-tJ-gEL">
+                                <rect key="frame" x="249" y="239" width="102" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nF7-58-Ima">
+                                <rect key="frame" x="273" y="510" width="55" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GjP-N9-Hqp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.074373399232653417" green="0.16236336883408076" blue="0.086888335306243167" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kkk-tJ-gEL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0SB-ku-2Sm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="k8x-BZ-A4W" secondAttribute="leading" id="2H9-Ug-2DL"/>
+                            <constraint firstItem="k8x-BZ-A4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2N9-TN-Al6"/>
+                            <constraint firstItem="nF7-58-Ima" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7OR-fD-KZ8"/>
+                            <constraint firstItem="k8x-BZ-A4W" firstAttribute="top" secondItem="s3u-jU-mht" secondAttribute="bottom" constant="30" id="98v-Ry-L6g"/>
+                            <constraint firstItem="HRl-wX-Kxr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CAC-18-aKp"/>
+                            <constraint firstItem="kkk-tJ-gEL" firstAttribute="top" secondItem="HRl-wX-Kxr" secondAttribute="bottom" constant="15" id="F8M-qX-9xK"/>
+                            <constraint firstItem="HRl-wX-Kxr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Jld-Ue-TZf"/>
+                            <constraint firstItem="nF7-58-Ima" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRW-n5-S0J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nF7-58-Ima" secondAttribute="bottom" constant="60" id="QVb-1x-Veg"/>
+                            <constraint firstItem="s3u-jU-mht" firstAttribute="top" secondItem="kkk-tJ-gEL" secondAttribute="bottom" constant="24" id="RlI-UI-vYL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nF7-58-Ima" secondAttribute="bottom" priority="900" constant="51" id="aAH-QR-uhR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k8x-BZ-A4W" secondAttribute="trailing" id="eTe-zC-aKe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s3u-jU-mht" secondAttribute="trailing" id="jLe-3Y-oVz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="s3u-jU-mht" secondAttribute="leading" id="kCq-Oy-ju2"/>
+                            <constraint firstItem="nF7-58-Ima" firstAttribute="top" relation="greaterThanOrEqual" secondItem="k8x-BZ-A4W" secondAttribute="bottom" constant="100" id="ndW-4s-OnO"/>
+                            <constraint firstItem="nF7-58-Ima" firstAttribute="top" secondItem="k8x-BZ-A4W" secondAttribute="bottom" constant="120" id="oXM-EF-FLf"/>
+                            <constraint firstItem="nF7-58-Ima" firstAttribute="top" relation="lessThanOrEqual" secondItem="k8x-BZ-A4W" secondAttribute="bottom" constant="130" id="xKH-3U-885"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2N9-TN-Al6"/>
+                                <exclude reference="QRW-n5-S0J"/>
+                                <exclude reference="ndW-4s-OnO"/>
+                                <exclude reference="oXM-EF-FLf"/>
+                                <exclude reference="QVb-1x-Veg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="s3u-jU-mht" id="EGm-Ju-Pub"/>
+                        <outlet property="passwordTextField" destination="k8x-BZ-A4W" id="kjK-wa-IG7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="92" y="112"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bag.png" width="360" height="360"/>
+    </resources>
 </document>
