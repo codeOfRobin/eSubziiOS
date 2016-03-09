@@ -13,6 +13,8 @@ struct API {
         static let portNumber = "3000"
         static let api = "api"
         static let login = "login"
+        static let discounts = "discounts"
+        static let get = "get"
     }
     var fullUrl:String
     {
@@ -22,5 +24,9 @@ struct API {
     var loginURL:String
     {
         return ([fullUrl,Static.api,Static.login]).joinWithSeparator("/")
+    }
+    var getAllNotificationsURL:String
+    {
+        return ([fullUrl,Static.api,Static.discounts,Static.get]).joinWithSeparator("/")
     }
 }

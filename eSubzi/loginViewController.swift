@@ -27,6 +27,7 @@ class loginViewController: UIViewController {
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setValue(json["token"].string, forKeyPath: "token")
                     defaults.synchronize()
+                    self.performSegueWithIdentifier("successLogin", sender: self)
                 }
             case .Failure(let error):
                 print(error)
@@ -38,7 +39,13 @@ class loginViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-    
+        let defaults = NSUserDefaults.standardUserDefaults()
+        print(defaults.valueForKey("token"))
+        if let _ = defaults.valueForKey("token")
+        {
+            self.performSegueWithIdentifier("successLogin", sender: self)
+
+        }
         // Do any additional setup after loading the view.
     }
 
