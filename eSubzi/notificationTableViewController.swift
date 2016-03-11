@@ -24,6 +24,8 @@ class notificationTableViewController: UIViewController ,UITableViewDataSource,U
         ]
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 85
+        tableView.rowHeight = UITableViewAutomaticDimension
         Alamofire.request(.GET, API().getAllNotificationsURL, headers:headers ).validate().responseJSON { response in
             switch response.result {
             case .Success:
@@ -39,7 +41,9 @@ class notificationTableViewController: UIViewController ,UITableViewDataSource,U
         }
         // Do any additional setup after loading the view.
     }
-
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 85
+    }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -49,7 +53,16 @@ class notificationTableViewController: UIViewController ,UITableViewDataSource,U
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "cell")
-        cell.textLabel?.text = notifications[indexPath.row]["discountDescription"].string
+        if indexPath.row%2==0
+        {
+            cell.textLabel?.text = "Safal"
+        }
+        else
+        {
+            cell.textLabel?.text = "Mother Dairy"
+        }
+        cell.detailTextLabel?.text = notifications[indexPath.row]["discountDescription"].string
+        cell.textLabel?.numberOfLines = 0
         return cell
     }
     override func didReceiveMemoryWarning() {

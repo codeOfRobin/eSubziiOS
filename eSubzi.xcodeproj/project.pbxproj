@@ -18,6 +18,8 @@
 		4281E2521C8DB6D2003A1A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4281E2501C8DB6D2003A1A9E /* Main.storyboard */; };
 		4281E2541C8DB6D2003A1A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4281E2531C8DB6D2003A1A9E /* Assets.xcassets */; };
 		4281E2571C8DB6D2003A1A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4281E2551C8DB6D2003A1A9E /* LaunchScreen.storyboard */; };
+		42A56A761C93242400B92E02 /* Discounts.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A56A751C93242400B92E02 /* Discounts.png */; };
+		42A56A781C93242700B92E02 /* Products.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A56A771C93242700B92E02 /* Products.png */; };
 		4A799D099DB5C2F33F787EDA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B4135E4F52F6119AF27B03 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		4281E2531C8DB6D2003A1A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4281E2561C8DB6D2003A1A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4281E2581C8DB6D2003A1A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A56A751C93242400B92E02 /* Discounts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Discounts.png; sourceTree = "<group>"; };
+		42A56A771C93242700B92E02 /* Products.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Products.png; sourceTree = "<group>"; };
 		E434DF877AC1AA595E055A8E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E74800B0017CC8250ED075AC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +87,8 @@
 				4246BDC31C90A5C200E7906F /* loginViewController.swift */,
 				4246BDBF1C90A18800E7906F /* signupViewController.swift */,
 				4281E2531C8DB6D2003A1A9E /* Assets.xcassets */,
+				42A56A771C93242700B92E02 /* Products.png */,
+				42A56A751C93242400B92E02 /* Discounts.png */,
 				4281E2551C8DB6D2003A1A9E /* LaunchScreen.storyboard */,
 				4281E2581C8DB6D2003A1A9E /* Info.plist */,
 			);
@@ -167,8 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A56A761C93242400B92E02 /* Discounts.png in Resources */,
 				4281E2571C8DB6D2003A1A9E /* LaunchScreen.storyboard in Resources */,
 				4281E2541C8DB6D2003A1A9E /* Assets.xcassets in Resources */,
+				42A56A781C93242700B92E02 /* Products.png in Resources */,
 				4246BDC81C90A64600E7906F /* bag.png in Resources */,
 				4281E2521C8DB6D2003A1A9E /* Main.storyboard in Resources */,
 				4246BDC21C90A2D800E7906F /* basket.png in Resources */,

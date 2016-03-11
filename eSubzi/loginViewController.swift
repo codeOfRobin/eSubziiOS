@@ -17,7 +17,8 @@ class loginViewController: UIViewController {
     @IBAction func login(sender: AnyObject)
     {
         let parameters = ["email":emailTextField.text!,"password":passwordTextField.text!]
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.setNeedsStatusBarAppearanceUpdate()
         Alamofire.request(.POST, API().loginURL, parameters: parameters).validate().responseJSON { response in
             switch response.result {
             case .Success:
@@ -33,8 +34,11 @@ class loginViewController: UIViewController {
                 print(error)
             }
         }
-
-        
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle
+    {
+        return .LightContent
     }
     override func viewDidLoad()
     {
@@ -54,6 +58,9 @@ class loginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("yay")
+    }
 
     /*
     // MARK: - Navigation
