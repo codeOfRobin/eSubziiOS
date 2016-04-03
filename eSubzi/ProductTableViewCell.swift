@@ -10,10 +10,10 @@ import UIKit
 
 class ProductTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var itemNameLabel: UILabel!
-    @IBOutlet weak var itemImageView: UIImageView!
-    @IBOutlet weak var itemPrice: UILabel!
-    @IBOutlet weak var itemQuantity: UILabel!
+    @IBOutlet var itemNameLabel: UILabel!
+    @IBOutlet var itemImageView: UIImageView!
+    @IBOutlet var itemPrice: UILabel!
+    @IBOutlet var itemQuantity: UILabel!
     @IBAction func incQuantity(sender: AnyObject)
     {
     
@@ -32,10 +32,8 @@ class ProductTableViewCell: UITableViewCell {
     
     func setDataFromProduct(prod: Product)
     {
-        itemNameLabel.text = prod.itemDescription
-        itemPrice.text = String(prod.price)
-        itemQuantity.text = String(prod.quantity)
-        itemImageView.image = prod.image
+        print(prod.itemDescription)
+        
     }
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

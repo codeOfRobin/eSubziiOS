@@ -19,7 +19,8 @@ class Product: NSObject
     var id = ""
     init(jsonDict : JSON)
     {
-        guard let id = jsonDict["__id"].string, quantity = jsonDict["quantity"].int, price = jsonDict["price"].float
+        print(jsonDict)
+        guard let id = jsonDict["_id"].string, quantity = jsonDict["quantity"].int, price = jsonDict["price"].float,description = jsonDict["description"].string
         else
         {
             return
@@ -27,6 +28,7 @@ class Product: NSObject
         self.id = id
         self.quantity = quantity
         self.price = price
+        self.itemDescription = description
         
     }
 }

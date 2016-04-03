@@ -263,7 +263,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="2cR-lf-Ilh" customClass="ProductTableViewCell" customModule="eSubzi" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="92" id="2cR-lf-Ilh" customClass="ProductTableViewCell" customModule="eSubzi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2cR-lf-Ilh" id="hcc-lK-vDz">
@@ -326,6 +326,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Products" image="Products.png" id="6eg-7J-euM"/>
+                    <connections>
+                        <outlet property="tableView" destination="VBr-CI-kkF" id="2Lq-6i-yVM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hae-03-leX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

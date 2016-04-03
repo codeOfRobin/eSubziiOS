@@ -9,12 +9,16 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-class ProductViewController: UIViewController
+class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 {
     var products : [Product] = []
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         let defaults = NSUserDefaults.standardUserDefaults()
         let token = defaults.valueForKey("token") as! String
         let headers = [
@@ -33,6 +37,7 @@ class ProductViewController: UIViewController
                         })
                     }
                     print(self.products.count)
+                    self.tableView.reloadData()
                 } 
             case .Failure(let error):
                 print(error)
@@ -42,7 +47,27 @@ class ProductViewController: UIViewController
         // Do any additional setup after loading the view.
     }
     
-
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return self.products.count
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ProductTableViewCell
+        cell.setDataFromProduct(products[indexPath.row])
+        cell.itemNameLabel.text = products[indexPath.row].itemDescription
+        cell.itemPrice.text = String(products[indexPath.row].price)
+        cell.itemQuantity.text = String(products[indexPath.row].quantity)
+        cell.itemImageView.image = products[indexPath.row].image
+        return cell
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
