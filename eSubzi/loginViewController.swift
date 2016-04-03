@@ -24,7 +24,6 @@ class loginViewController: UIViewController {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
-                    print("JSON: \(json)")
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setValue(json["token"].string, forKeyPath: "token")
                     defaults.synchronize()
@@ -44,7 +43,6 @@ class loginViewController: UIViewController {
     {
         super.viewDidLoad()
         let defaults = NSUserDefaults.standardUserDefaults()
-        print(defaults.valueForKey("token"))
         if let _ = defaults.valueForKey("token")
         {
             self.performSegueWithIdentifier("successLogin", sender: self)

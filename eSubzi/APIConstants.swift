@@ -15,6 +15,8 @@ struct API {
         static let login = "login"
         static let discounts = "discounts"
         static let get = "get"
+        static let signup = "signup"
+        static let products = "products"
     }
     var fullUrl:String
     {
@@ -25,8 +27,18 @@ struct API {
     {
         return ([fullUrl,Static.api,Static.login]).joinWithSeparator("/")
     }
+    
+    var signupURL:String
+    {
+        return ([fullUrl,Static.api,Static.signup]).joinWithSeparator("/")
+    }
     var getAllNotificationsURL:String
     {
         return ([fullUrl,Static.api,Static.discounts,Static.get]).joinWithSeparator("/")
     }
+    var getAllProductsURL:String
+    {
+        return([fullUrl,Static.api,Static.products,Static.get]).joinWithSeparator("/")
+    }
+    
 }

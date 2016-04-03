@@ -30,9 +30,9 @@ class notificationTableViewController: UIViewController ,UITableViewDataSource,U
             switch response.result {
             case .Success:
                 if let value = response.result.value {
-                    let json = JSON(value)
-                    print("JSON: \(json)")
-                    self.notifications = json.array!
+                    var json = JSON(value)
+                    let discountJSON = json["Discounts"].array
+                    self.notifications = discountJSON!
                     self.tableView.reloadData()
                 }
             case .Failure(let error):
