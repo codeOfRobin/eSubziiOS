@@ -26,6 +26,7 @@ class loginViewController: UIViewController {
                     let json = JSON(value)
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setValue(json["token"].string, forKeyPath: "token")
+                    defaults.setValue(json["userId"].string, forKey: "userId")
                     defaults.synchronize()
                     self.performSegueWithIdentifier("successLogin", sender: self)
                 }

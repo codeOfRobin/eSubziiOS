@@ -14,6 +14,7 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
     var products : [Product] = []
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var placeOrderButton: UIButton!
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -72,6 +73,7 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     @IBAction func placeOrder(sender: AnyObject)
     {
+        
         let defaults = NSUserDefaults.standardUserDefaults()
         let token = defaults.valueForKey("token") as! String
         let headers = [
@@ -79,26 +81,35 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
             "Content-Type": "application/x-www-form-urlencoded"
         ]
         
-        var productIdArray:[String] = []
-        var quantityVals:[Int] = []
-        for pair in sharedCurrentOrder.orders
+        if sharedCurrentOrder.currentOrderState == orderState.haventOrdered
         {
-            productIdArray.append(pair.0)
-            quantityVals.append(pair.1)
-        }
-        Alamofire.request(.POST, API().placeOrderURL, headers:headers,parameters:["productIds": productIdArray, "quantityVals":quantityVals] ).validate().responseJSON { response in
-            switch response.result
+            var productIdArray:[String] = []
+            var quantityVals:[Int] = []
+            for pair in sharedCurrentOrder.orders
             {
+                productIdArray.append(pair.0)
+                quantityVals.append(pair.1)
+            }
+            Alamofire.request(.POST, API().placeOrderURL, headers:headers,parameters:["productIds": productIdArray, "quantityVals":quantityVals] ).validate().responseJSON { response in
+                switch response.result
+                {
                 case .Success:
                     if let value = response.result.value
                     {
                         let json = JSON(value)
                         print(json)
                         sharedCurrentOrder.currentOrderState = orderState.InProgress
+                        self.placeOrderButton.titleLabel?.text = "Check Order Status"
                     }
                 case .Failure(let error):
                     print(error)
+                }
             }
+
+        }
+        else
+        {
+            
         }
     }
     

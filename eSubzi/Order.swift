@@ -14,6 +14,7 @@ enum orderState {
 
 class currentOrder: NSObject
 {
+    var userId = ""
     var orders : [String:Int] = [:]
     var currentOrderState = orderState.haventOrdered
 }
