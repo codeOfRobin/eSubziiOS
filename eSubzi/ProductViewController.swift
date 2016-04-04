@@ -17,6 +17,7 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        sharedCurrentOrder.currentOrderState = .haventOrdered
         tableView.delegate = self
         tableView.dataSource = self
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -57,13 +58,10 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ProductTableViewCell
         cell.setDataFromProduct(products[indexPath.row])
-        cell.itemNameLabel.text = products[indexPath.row].itemDescription
-        cell.itemPrice.text = String(products[indexPath.row].price)
-        cell.itemQuantity.text = String(products[indexPath.row].quantity)
-        cell.itemImageView.image = products[indexPath.row].image
         return cell
     }
     
