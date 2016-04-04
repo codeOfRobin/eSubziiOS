@@ -56,9 +56,12 @@ class loginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
         print("yay")
     }
+    
+    
 
     /*
     // MARK: - Navigation

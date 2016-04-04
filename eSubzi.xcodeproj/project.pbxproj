@@ -11,6 +11,7 @@
 		4224E8601CB1A68300BEC62F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224E85F1CB1A68300BEC62F /* Product.swift */; };
 		4224E8621CB1B2A500BEC62F /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224E8611CB1B2A500BEC62F /* ProductViewController.swift */; };
 		4224E8641CB1B59900BEC62F /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224E8631CB1B59900BEC62F /* ProductTableViewCell.swift */; };
+		423027551CB2D1D000C77998 /* OrderStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423027541CB2D1CF00C77998 /* OrderStatusView.swift */; };
 		4236EDC61CB19073006359D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4236EDC51CB19073006359D1 /* SignUpViewController.swift */; };
 		4246BDC21C90A2D800E7906F /* basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 4246BDC11C90A2D800E7906F /* basket.png */; };
 		4246BDC41C90A5C200E7906F /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246BDC31C90A5C200E7906F /* loginViewController.swift */; };
@@ -33,6 +34,7 @@
 		4224E85F1CB1A68300BEC62F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		4224E8611CB1B2A500BEC62F /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		4224E8631CB1B59900BEC62F /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		423027541CB2D1CF00C77998 /* OrderStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusView.swift; sourceTree = "<group>"; };
 		4236EDC51CB19073006359D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4246BDC11C90A2D800E7906F /* basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basket.png; sourceTree = "<group>"; };
 		4246BDC31C90A5C200E7906F /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				4281E2501C8DB6D2003A1A9E /* Main.storyboard */,
 				4224E8631CB1B59900BEC62F /* ProductTableViewCell.swift */,
 				4224E8611CB1B2A500BEC62F /* ProductViewController.swift */,
+				423027541CB2D1CF00C77998 /* OrderStatusView.swift */,
 				420A8E2C1CB27E0F00AF03D3 /* Order.swift */,
 				4224E85F1CB1A68300BEC62F /* Product.swift */,
 				4246BDCD1C90B98E00E7906F /* notificationTableViewController.swift */,
@@ -255,6 +258,7 @@
 				420A8E2D1CB27E0F00AF03D3 /* Order.swift in Sources */,
 				4224E8641CB1B59900BEC62F /* ProductTableViewCell.swift in Sources */,
 				4246BDCC1C90A85700E7906F /* APIConstants.swift in Sources */,
+				423027551CB2D1D000C77998 /* OrderStatusView.swift in Sources */,
 				4246BDCE1C90B98E00E7906F /* notificationTableViewController.swift in Sources */,
 				4281E24F1C8DB6D2003A1A9E /* ViewController.swift in Sources */,
 				4281E24D1C8DB6D2003A1A9E /* AppDelegate.swift in Sources */,

@@ -17,6 +17,7 @@ struct API {
         static let get = "get"
         static let signup = "signup"
         static let products = "products"
+        static let placeOrder = "placeOrder"
     }
     var fullUrl:String
     {
@@ -39,6 +40,11 @@ struct API {
     var getAllProductsURL:String
     {
         return([fullUrl,Static.api,Static.products,Static.get]).joinWithSeparator("/")
+    }
+    
+    var placeOrderURL: String
+    {
+        return([fullUrl,Static.api,Static.placeOrder]).joinWithSeparator("/")
     }
     
 }

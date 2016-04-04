@@ -37,7 +37,6 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
                             return Product(jsonDict: jsonObj)
                         })
                     }
-                    print(self.products.count)
                     self.tableView.reloadData()
                 } 
             case .Failure(let error):
@@ -69,6 +68,38 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func placeOrder(sender: AnyObject)
+    {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let token = defaults.valueForKey("token") as! String
+        let headers = [
+            "x-access-token": token,
+            "Content-Type": "application/x-www-form-urlencoded"
+        ]
+        
+        var productIdArray:[String] = []
+        var quantityVals:[Int] = []
+        for pair in sharedCurrentOrder.orders
+        {
+            productIdArray.append(pair.0)
+            quantityVals.append(pair.1)
+        }
+        Alamofire.request(.POST, API().placeOrderURL, headers:headers,parameters:["productIds": productIdArray, "quantityVals":quantityVals] ).validate().responseJSON { response in
+            switch response.result
+            {
+                case .Success:
+                    if let value = response.result.value
+                    {
+                        let json = JSON(value)
+                        print(json)
+                        sharedCurrentOrder.currentOrderState = orderState.InProgress
+                    }
+                case .Failure(let error):
+                    print(error)
+            }
+        }
     }
     
 

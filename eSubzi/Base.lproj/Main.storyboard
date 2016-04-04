@@ -300,7 +300,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSq-3L-8D4">
-                                                    <rect key="frame" x="129" y="61" width="42" height="21"/>
+                                                    <rect key="frame" x="129" y="61" width="144" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -316,16 +316,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1n-zH-NBj">
-                                <rect key="frame" x="0.0" y="512" width="600" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1n-zH-NBj">
+                                <rect key="frame" x="217" y="512" width="166" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Place Order Now"/>
+                                <connections>
+                                    <action selector="placeOrder:" destination="Xkc-l5-zcz" eventType="touchUpInside" id="1sl-72-Sbt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="VBr-CI-kkF" secondAttribute="trailing" constant="-20" id="1Fc-bm-ZiP"/>
                             <constraint firstItem="VBr-CI-kkF" firstAttribute="bottom" secondItem="wFq-Gb-krM" secondAttribute="bottomMargin" id="5K6-bZ-5nu"/>
+                            <constraint firstItem="E1n-zH-NBj" firstAttribute="centerX" secondItem="wFq-Gb-krM" secondAttribute="centerX" id="WPc-7y-AAc"/>
                             <constraint firstItem="VBr-CI-kkF" firstAttribute="leading" secondItem="wFq-Gb-krM" secondAttribute="leadingMargin" constant="-20" id="eHd-45-qVf"/>
                             <constraint firstItem="VBr-CI-kkF" firstAttribute="top" secondItem="wFq-Gb-krM" secondAttribute="topMargin" id="gvJ-bO-6Ed"/>
                             <constraint firstItem="Gun-HZ-cVS" firstAttribute="top" secondItem="E1n-zH-NBj" secondAttribute="bottom" id="qHT-fQ-FQh"/>
