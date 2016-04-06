@@ -90,7 +90,7 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
                 productIdArray.append(pair.0)
                 quantityVals.append(pair.1)
             }
-            Alamofire.request(.POST, API().placeOrderURL, headers:headers,parameters:["productIds": productIdArray, "quantityVals":quantityVals] ).validate().responseJSON { response in
+            let x = Alamofire.request(.POST, API().placeOrderURL, headers:headers,parameters:["productIds": productIdArray, "quantityVals":quantityVals]).validate().responseJSON { response in
                 switch response.result
                 {
                 case .Success:
@@ -104,7 +104,10 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
                 case .Failure(let error):
                     print(error)
                 }
+            
             }
+            
+            print(x)
 
         }
         else

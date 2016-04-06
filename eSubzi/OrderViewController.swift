@@ -35,7 +35,7 @@ class OrderViewController: UIViewController {
                     let json = JSON(value)
                     print(json)
                     sharedCurrentOrder.currentOrderState = orderState.InProgress
-                    self.currentStatusLabel.text = "Current Status : \(json["Orders"][0]["currentState"].string!)"
+//                    self.currentStatusLabel.text = "Current Status : \(json["Orders"][0]["currentState"].string!)"
                 }
             case .Failure(let error):
                 print(error)

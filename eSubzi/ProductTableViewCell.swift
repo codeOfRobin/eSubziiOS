@@ -34,7 +34,7 @@ class ProductTableViewCell: UITableViewCell
         {
             sharedCurrentOrder.orders[(productObj?.id)!] = 1
         }
-        itemQuantity.text = String(sharedCurrentOrder.orders[(productObj?.id)!])
+        itemQuantity.text = "Qty : " + String(sharedCurrentOrder.orders[(productObj?.id)!]!)
     }
     
     @IBAction func decreaseQuantity(sender: AnyObject)
@@ -53,7 +53,7 @@ class ProductTableViewCell: UITableViewCell
         productObj = prod
         itemNameLabel.text = prod.itemDescription
         itemPrice.text = String(prod.price)
-        itemQuantity.text = String(prod.quantity)
+        itemQuantity.text = "Qty : 0"
         itemImageView.image = prod.image
 
         

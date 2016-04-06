@@ -19,6 +19,7 @@ class loginViewController: UIViewController {
         let parameters = ["email":emailTextField.text!,"password":passwordTextField.text!]
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.setNeedsStatusBarAppearanceUpdate()
+        print(API().loginURL)
         Alamofire.request(.POST, API().loginURL, parameters: parameters).validate().responseJSON { response in
             switch response.result {
             case .Success:
@@ -40,13 +41,19 @@ class loginViewController: UIViewController {
     {
         return .LightContent
     }
+    func handleTap(recognizer: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        let recognizer = UITapGestureRecognizer(target: self, action:#selector(loginViewController.handleTap(_:)))
+        self.view.addGestureRecognizer(recognizer)
         let defaults = NSUserDefaults.standardUserDefaults()
         if let _ = defaults.valueForKey("token")
         {
             self.performSegueWithIdentifier("successLogin", sender: self)
+
 
         }
         // Do any additional setup after loading the view.

@@ -8,7 +8,7 @@ import Foundation
 struct API {
     struct Static {
         static let apiProtocol = "http://"
-        static let baseURL = "localhost"
+        static let baseURL = "128.199.152.41"
         //        static let baseURL = "169.254.223.134"
         static let portNumber = "3000"
         static let api = "api"
@@ -23,6 +23,7 @@ struct API {
     var fullUrl:String
     {
         return Static.apiProtocol + Static.baseURL + ":" + Static.portNumber
+//        return Static.apiProtocol + Static.baseURL
     }
     
     var loginURL:String
