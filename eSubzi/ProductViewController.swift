@@ -21,6 +21,11 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
         sharedCurrentOrder.currentOrderState = .haventOrdered
         tableView.delegate = self
         tableView.dataSource = self
+        placeOrderButton.layer.borderColor = UIColor(red: 45/255, green: 118/255, blue: 47/255, alpha: 1).CGColor
+        placeOrderButton.layer.borderWidth = 1.0
+        placeOrderButton.layer.cornerRadius = 10
+        placeOrderButton.contentEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
+        
         let defaults = NSUserDefaults.standardUserDefaults()
         let token = defaults.valueForKey("token") as! String
         let headers = [
@@ -76,6 +81,7 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let token = defaults.valueForKey("token") as! String
+        let userId = defaults.valueForKey("userId") as! String
         let headers = [
             "x-access-token": token,
             "Content-Type": "application/x-www-form-urlencoded"
@@ -90,7 +96,7 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
                 productIdArray.append(pair.0)
                 quantityVals.append(pair.1)
             }
-            let x = Alamofire.request(.POST, API().placeOrderURL, headers:headers,parameters:["productIds": productIdArray, "quantityVals":quantityVals]).validate().responseJSON { response in
+            let x = Alamofire.request(.POST, API().placeOrderURL, headers:headers,parameters:["productIds": productIdArray.description, "quantityVals":quantityVals.description,"userId":userId]).validate().responseJSON { response in
                 switch response.result
                 {
                 case .Success:
@@ -98,7 +104,7 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
                     {
                         let json = JSON(value)
                         print(json)
-                        sharedCurrentOrder.currentOrderState = orderState.InProgress
+                        sharedCurrentOrder.currentOrderState = orderState.OrderReceived
                         self.placeOrderButton.titleLabel?.text = "Check Order Status"
                     }
                 case .Failure(let error):
@@ -112,7 +118,35 @@ class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDat
         }
         else
         {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let token = defaults.valueForKey("token") as! String
+            _ = defaults.valueForKey("userId") as! String
+            let headers = [
+                "x-access-token": token,
+                "Content-Type": "application/x-www-form-urlencoded"
+            ]
             
+            Alamofire.request(.POST, API().fetchOrdersURL, headers:headers,parameters:["usertype":"Customer"] ).validate().responseJSON { response in
+                switch response.result
+                {
+                case .Success:
+                    if let value = response.result.value
+                    {
+                        let json = JSON(value)
+                        print(json)
+//                        sharedCurrentOrder.currentOrderState = orderState.
+                        
+                        let alert = UIAlertController(title: "Subzi", message: "Current Status : \(json["Orders"][0]["currentState"].string!)", preferredStyle: .Alert)
+                        alert.addAction(UIAlertAction(title: "Okay", style: .Cancel, handler: { (finished) in
+                            alert.dismissViewControllerAnimated(true, completion: nil);
+                        }))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    }
+                case .Failure(let error):
+                    print(error)
+                }
+            }
+
         }
     }
     

@@ -8,8 +8,8 @@ import Foundation
 struct API {
     struct Static {
         static let apiProtocol = "http://"
-        static let baseURL = "128.199.152.41"
-        //        static let baseURL = "169.254.223.134"
+//        static let baseURL = "128.199.152.41"
+        static let baseURL = "localhost"
         static let portNumber = "3000"
         static let api = "api"
         static let login = "login"
@@ -19,6 +19,7 @@ struct API {
         static let products = "products"
         static let placeOrder = "placeOrder"
         static let fetchOrder = "findOrders"
+        static let findOrdersNotDelivered = "findOrdersNotDelivered"
     }
     var fullUrl:String
     {
@@ -52,6 +53,11 @@ struct API {
     var fetchOrdersURL: String
     {
         return([fullUrl,Static.api,Static.fetchOrder]).joinWithSeparator("/")
+    }
+    
+    var fetchLatestOrdersURL: String
+    {
+        return([fullUrl,Static.api,Static.findOrdersNotDelivered]).joinWithSeparator("/")
     }
     
 }
